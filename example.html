@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Example</title>
+<style>
+.output {
+	display: block;
+}
+</style>
+</head>
+<body>
+<div id='output' class="output">Click to hide this element.</div>
+<script src="function.js"></script>
+<script>
+document.querySelector("#output").addEventListener("click", function() {
+    const element = document.querySelector("#output");
+    if (element) {
+        updateOrAddHideClass('output');
+    }
+});
+</script>
+</body>
+</html>
